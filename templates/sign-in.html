@@ -1,0 +1,28 @@
+{% extends 'homepage.html' %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <div class="sigin">
+        <form class="row" method="POST">
+            {% csrf_token %}
+        <div class="sigin__sale">
+            <div class="sigin__title">
+                <span>Войти</span>
+            </div>
+            <div class="sigin__adrress">
+                <label>Имя пользователя:</label>
+                <input name="username" type="text" style="background-color: white;"  />
+            </div>
+            <div class="sigin__password">
+                <label>Пароль</label>
+                <input name="password" type="password" style="background-color: white;"  />
+            </div>
+            <div class="sigin__button-sigin">
+                <button type="submit" class="btn btn-ark btn-sm" style="background-color: darkgoldenrod;" >Войти</button>
+            </div>
+        </div>
+    </form>
+    </div>
+    {% include 'include/footer.html' %}
+
+{% endblock %}

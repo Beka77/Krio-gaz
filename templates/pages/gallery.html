@@ -1,0 +1,43 @@
+{% extends 'homepage.html' %} 
+{% block content %}
+{% load static %}
+
+<!-- End Top Background Image Wrapper -->
+{% include 'include/header.html' %}
+<!-- End Top Background Image Wrapper -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <div class="content"> 
+      <div id="gallery">
+        <figure>
+          <header class="heading">Gallery Title Goes Here</header>
+          <ul class="nospace clear">
+            <li class="one_quarter first"><img src="{% static 'images/demo/gallery/photo1.jpg' %}" alt="photo"></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo2.jpg' %}" alt=""></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo3.jpg' %}" alt=""></li>
+            <li class="one_quarter first"><img src="{% static 'images/demo/gallery/photo1.jpg' %}" alt="photo"></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo2.jpg' %}" alt=""></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo3.jpg' %}" alt=""></li>
+            <li class="one_quarter first"><img src="{% static 'images/demo/gallery/photo1.jpg' %}" alt="photo"></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo2.jpg' %}" alt=""></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo3.jpg' %}" alt=""></li>
+            <li class="one_quarter first"><img src="{% static 'images/demo/gallery/photo1.jpg' %}" alt="photo"></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo2.jpg' %}" alt=""></li>
+            <li class="one_quarter"><img src="{% static 'images/demo/gallery/photo3.jpg' %}" alt=""></li>
+          </ul>
+          <figcaption style="width: 750px; font-size: large;" >
+            Умный дом - это дом, в котором установлены системы автоматизации, которые позволяют контролировать системами внутри дома.Умный дом также может быть оснащен системами мониторинга здоровья и безопасности, которые могут обнаружить проблемы и предупредить вас, когда что-то не так. Например, системы детекции утечки газа или воды могут предотвратить аварии, а системы мониторинга здоровья могут предупредить о возможных проблемах со здоровьем. </figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper row2 bgded overlay" style="background-image:url('../images/demo/backgrounds/04.png');">
+</div>
+
+{% include 'include/footer.html' %}
+<!-- JAVASCRIPTS -->
+{% endblock %} 

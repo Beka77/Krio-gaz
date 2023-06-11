@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+}
+.auth {
+    width          : 100%;
+    height         : 100vh;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+}
+
+.auth__sale {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(231, 239, 253);
+    display        : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+.auth__title > span{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth__title {
+    text-align: center;
+}
+
+.auth__adrress, .auth__password, .auth__name, .auth__last-name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.auth__button-register{
+    text-align: center;
+}
+
+.auth__button-register > button{
+    margin-top: 50px;
+    height: 30px;
+    width: 400px;
+}

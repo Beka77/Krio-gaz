@@ -1,0 +1,104 @@
+{% extends 'homepage.html' %}
+{% block content %}
+{% include 'include/header.html' %}
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+                            </div>
+                            <div class="col-lg-6 px-xl-10">
+                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                                    <h3 class="h2 text-white mb-0">{{ user.last_name }} {{user.first_name}}</h3>
+                                    <span class="text-black">Ученик</span>
+                                </div>
+                                <ul class="list-unstyled mb-1-9">
+                                    <li class="display-28"><span
+                                            class="display-26 text-secondary me-2 font-weight-600">Имя
+                                            пользователя:</span> {{user.username}}</li>
+                                </ul>
+                                <li class="mb-2 mb-xl-3 display-28"><span
+                                        class="display-26 text-secondary me-2 font-weight-600">Электронная почта:</span>
+                                        {{ user.email }}</li>
+                                <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
+                                    <li><a href="#!"><i class="ti-twitter-alt"></i></a></li>
+                                    <li><a href="#!"><i class="ti-facebook"></i></a></li>
+                                    <li><a href="#!"><i class="ti-pinterest"></i></a></li>
+                                    <li><a href="#!"><i class="ti-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mb-4 mb-sm-5" style="color: black;">
+                <div>
+                    <span class="section-title text-primary mb-3 mb-sm-4">Обо мне</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum iure sunt aperiam, magni
+                        eius odio cum. Et officiis deleniti aut expedita doloribus nulla, cumque in, debitis,
+                        praesentium obcaecati repudiandae.</p>
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusamus dignissimos
+                        recusandae neque iusto rem, quod unde temporibus. Beatae, delectus atque libero blanditiis
+                        reiciendis error sit recusandae nobis officia magnam sint maiores voluptatibus aliquid
+                        perferendis! Pariatur dicta quidem, at omnis quibusdam cupiditate soluta. Unde corporis fugiat
+                        voluptates nulla ipsum harum?</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 mb-sm-5">
+                        <div class="mb-4 mb-sm-5" style="color: black;">
+                            <span class="section-title text-primary mb-3 mb-sm-4">Навык</span>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Driving range</div>
+                                    <div class="col-6 text-end">80%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:80%"
+                                    aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Short Game</div>
+                                    <div class="col-6 text-end">90%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:90%"
+                                    aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Side Bets</div>
+                                    <div class="col-6 text-end">50%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium mb-3" style="height: 4px;">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:50%"
+                                    aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                            <div class="progress-text">
+                                <div class="row">
+                                    <div class="col-6">Putting</div>
+                                    <div class="col-6 text-end">60%</div>
+                                </div>
+                            </div>
+                            <div class="custom-progress progress progress-medium" style="height: 4px">
+                                <div class="animated custom-bar progress-bar slideInLeft bg-secondary" style="width:60%"
+                                    aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'include/footer.html' %}
+{% endblock %}

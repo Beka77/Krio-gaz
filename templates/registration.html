@@ -1,0 +1,43 @@
+{% extends 'homepage.html' %} {% block content %}
+  {% include 'include/header.html' %}
+
+  <div class="auth">
+    <div class="auth__sale" style="background-color: wheat; height: 650px;" >
+      <div class="auth__title">
+        <form class="row" method="POST">
+        {% csrf_token %}
+        <span>Регистрация</span>
+      </div>
+      <div class="auth__name">
+        <label htmlFor="">Имя пользователя:</label>
+        <input name="username" type="text" style="background-color: white;"  />
+      </div>
+      <div class="auth__name">
+        <label htmlFor="">Имя</label>
+        <input name="first_name" type="text" style="background-color: white;" />
+      </div>
+      <div class="auth__last-name">
+        <label htmlFor="">Фамилия</label>
+        <input name="last_name" type="text"style="background-color: white;"  />
+      </div>
+      <div class="auth__adrress">
+        <label htmlFor="email">Почта</label>
+        <input name="" type="email" style="background-color: white;"  />
+      </div>
+      <div class="auth__password">
+        <label htmlFor="">Пароль</label>
+        <input name="password" type="password" style="background-color: white;"  />
+      </div>
+      <div class="auth__password">
+        <label htmlFor="">Подтвердите пароль:</label>
+        <input name="password2" type="password" style="background-color: white;"  />
+      </div>
+      <div class="auth__button-register">
+        <button style="color: darkgoldenrod;" >Регистрация</button>
+      </div>
+    </div>
+  </form>
+  </div>
+
+  {% include 'include/footer.html' %} {% endblock %}
+</body>

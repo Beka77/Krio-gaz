@@ -1,0 +1,29 @@
+{% load static %}
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left">
+      <h1><a href="{% url 'index' %}">{{setting.title}}</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a href="{% url 'index' %}">Главная</a></li>
+        <li>
+          <a class="drop">Страницы</a>
+          <ul>
+            <li><a href="{% url 'gallery' %}">Галерея</a></li>
+            <li><a href="{% url 'contact' %}">Контакты</a></li>
+          </ul>
+        </li>
+        {% if request.user.is_authenticated and request.user == user%}
+        <li>
+          <a href="{% url 'account' request.user.username %}">Профиль</a>
+          <li><a href="{% url 'logout' %}">Выйти</a></li>
+        </li>
+        {% else %}
+        <li><a href="{% url 'user_register' %}">Регистрация</a></li>
+        <li><a href="{% url 'user_login' %}">Войти</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+</div>

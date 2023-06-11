@@ -1,0 +1,115 @@
+{% extends 'homepage.html' %}
+{% block content %}
+{% load static %}
+
+<!-- End Top Background Image Wrapper -->
+{% include 'include/header.html' %}
+
+
+<div id="pageintro" class="hoc clear">
+  <article>
+    <p>Arsenal Education</p>
+    <h3 class="heading">{{setting.title}}</h3>
+    <footer>
+    </footer>
+  </article>
+</div>
+
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <div class="sectiontitle">
+      <h6 class="heading">О Проекте</h6>
+    </div>
+    <article class="group">
+      <div class="one_half first">
+        <h6 class="heading">{{setting.title}}</h6>
+        <p>{{setting.description}}</p>
+      </div>
+      <div class="one_half"><a class="imgover" href="{% static 'images/demo/gallery/photo2.jpg' %}"><img
+            src="{% static 'images/demo/gallery/photo2.jpg' %}" alt=""></a></div>
+    </article>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<div class="wrapper w-100" style="width: 100%; margin-left: 200px;">
+  <figure class="hoc container clear clients">
+    <ul class="nospace group" style="width: 100%; justify-content: space-between">
+      <li class="one_quarter first"><a class="imgover" href="{% static 'images/demo/gallery/photo2.jpg' %}"><img
+            src="{% static 'images/demo/gallery/photo2.jpg' %}" alt="" style='width: 100%'></a></li>
+      <li class="one_quarter"><a class="imgover" href="{% static 'images/demo/gallery/photo1.jpg' %}"><img
+            src="{% static 'images/demo/gallery/photo1.jpg' %}" alt="" style='width: 100%'></a></li>
+      <li class="one_quarter"><a class="imgover" href="{% static 'images/demo/gallery/photo3.jpg' %}"><img
+            src="{% static 'images/demo/gallery/photo3.jpg' %}" alt="" style='width: 100%'></a></li>
+    </ul>
+  </figure>
+</div>
+<div class="wrapper row2 bgded overlay" style=" background-color: #333333a9;">
+  <section class="hoc container clear">
+    <div class="sectiontitle">
+      <h6 class="heading">Наши контакты</h6>
+    </div>
+    <div class="group team" style="margin-left: 270px;">
+      <figure class="one_quarter first"><a class="imgover" href="{% static '\images\demo\backgrounds\dir.jpg' %}"><img
+            src="{% static '\images\demo\backgrounds\dir.jpg' %}" alt=""
+            style="width: 350px; height: 300px; object-fit: cover; object-position: center;"></a>
+        <figcaption>
+          <h6 class="heading">Muralimjanov Diyor</h6>
+          <em>Front-end developer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="faicon-linkedin" target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="faicon-google-plus" target="_blank" href="#"><i class="fa fa-telegram"></i></a></li>
+              <li><a class="faicon-vk" target="_blank" href="#"><i class="fa fa-vkc"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a class="imgover" href="{% static '\images\demo\backgrounds\doni.jpg' %}"><img
+            src="{% static '\images\demo\backgrounds\doni.jpg' %}" alt=""
+            style="width: 350px; height: 300px; object-fit: cover; object-position: center;"></a>
+        <figcaption>
+          <h6 class="heading">Sattarjanov Doni</h6>
+          <em>Front-end developer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" target="_blank" href="https://instagram.com/sattarzanov_"><i
+                    class="fa fa-instagram"></i></a></li>
+              <li><a class="faicon-google-plus" target="_blank" href="https://t.me/sattarzanov"><i
+                    class="fa fa-telegram"></i></a></li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+      <figure class="one_quarter"><a class="imgover" href="{% static '\images\demo\gallery\photo.jpg' %}"><img
+            src="{% static '\images\demo\gallery\photo.jpg' %}" alt=""
+            style="width: 350px; height: 300px; object-fit: cover; object-position: center;"></a>
+        <figcaption>
+          <h6 class="heading"> Kasymjanov Beka</h6>
+          <em>Back-end developer</em>
+          <footer>
+            <ul class="faico clear">
+              <li><a class="faicon-twitter" target="_blank"
+                  href="https://www.instagram.com/mr.beka.07/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li><a class="faicon-linkedin" target="_blank" href="https://twitter.com/b_kasymjanov"><i
+                    class="fa fa-twitter"></i></a>
+              </li>
+              <li><a class="faicon-google-plus" target="_blank" href="https://t.me/secretnyi_user"><i
+                    class="fa fa-telegram"></i></a>
+              </li>
+              <li><a class="faicon-vk" target="_blank" href="https://vk.me/id677013829"><i class="fa fa-vk"></i></a>
+              </li>
+            </ul>
+          </footer>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</div>
+{% include 'include/footer.html' %}
+<!-- JAVASCRIPTS -->
+{% endblock %}

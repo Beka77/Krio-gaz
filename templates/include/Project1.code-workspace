@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../registration"
+	},
+	{
+		"path": "../../../profile"
+	}
+],
+  "settings": {}
+}
